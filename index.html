@@ -1,0 +1,207 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>CODE1230 ASSIGNMENT2 
+</title>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<!--jQuery (necessary for Bootstrap's JavaScript plugins)-->
+<script src="js/jquery.min.js"></script>
+ <!-- Custom Theme files -->
+<link href="css/style.css" rel='stylesheet' type='text/css' />
+<link rel="stylesheet" type="text/css" href="css/component.css" />
+<!--Custom Theme files-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</script>
+
+<!--start-smoth-scrolling-->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+		
+		<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script>
+<!--start-smoth-scrolling-->
+<!-- Map -->
+<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.48.0/mapbox-gl.js'></script>
+    <script src='./js/data.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.48.0/mapbox-gl.css' rel='stylesheet' />
+</head>
+<body>
+<<<<<<< HEAD
+<!--header-->
+	<div class="header">
+		<div class="header-top">
+			<div class="container">
+				<div class="logo">
+					<a href="index.html"></a>
+				</div>
+			<!--top-nav-->
+			 <nav class="top-nav">
+							<ul class="top-nav">
+								<li class="active"><a href="#home" class="scroll">Home </a></li>
+								<li><a href="#map" class="scroll">map</a></li>
+								<li><a href="#references" class="scroll">references</a></li>
+				
+							</ul>
+				
+						</nav>
+						<div class="clearfix"> </div>
+		<!-- script-for-menu -->
+		<!----start-top-nav-script---->
+		<script>
+			$(function() {
+				var pull 		= $('#pull');
+					menu 		= $('nav ul');
+					menuHeight	= menu.height();
+				$(pull).on('click', function(e) {
+					e.preventDefault();
+					menu.slideToggle();
+				});
+				$(window).resize(function(){
+	        		var w = $(window).width();
+	        		if(w > 320 && menu.is(':hidden')) {
+	        			menu.removeAttr('style');
+	        		}
+	    		});
+			});
+		</script>
+
+	<!--End-top-nav-script-->
+				<div class="clearfix"> </div>
+		</div>
+	</div>
+		<!--banner-->
+			<div class="banner" >
+					<div class="container" >
+							<div class="col-xs-20">
+						 <div class="banner-info">
+						 	<h1>CODE1230 ASSIGNMENT2</h1>
+						 	<h2>XIAOMIN,GUO(NAYUKI) Z5158014</h2>
+						
+
+						</div>
+					</div>
+			 	</div>
+			</div>
+		<!--Features-->
+		<div class="Features" id="feature">
+			<div class="container">
+=======
+    
+<div id='map' style='width: 80%; height: 400px'></div>
+<script>
+mapboxgl.accessToken = 'pk.eyJ1IjoibmF5dWtpNjkxOCIsImEiOiJjamxqZnh0YzIwYmt0M2tteGlpdmdsajc4In0.Q8FQ1pA57KWY-AGE0eYYwg';
+var map = new mapboxgl.Map({
+    container: 'map', // container id
+    style: 'mapbox://styles/mapbox/light-v9', // stylesheet location
+    center: [151.004105, -33.813002], // starting position [lng, lat]
+    pitch: 45,
+    bearing: -17.6,
+    zoom: 9 // starting zoom
+});
+map.on('load',function(){
+    
+    map.addLayer({
+        "id":"data",
+        "type": "fill-extrusion",
+        "source":{
+            'type':'geojson',
+            'data':data
+        },
+           'paint':{
+               'fill-extrusion-color':{
+                   'property':'2016',
+                   "stops":[
+                       [0,'darkgray'],
+                       [50,'lightcoral'],
+                       [100,'crimson'],
+                       [200,'firebrick'],
+                       [500,'darkred'],
+                       ]
+               },
+               'fill-extrusion-height':{
+                   'property':'different',
+                   "stops":[
+                       [0.2,0],
+                       [1,50000]
+                    ]
+               },
+               'fill-extrusion-opacity': 0.9
+           }
+    });
+});
+</script>
+>>>>>>> d953ee59c1f464fcfa6ccde6cb86e8b995fb999d
+
+					</div>
+					<div class="container">
+						<div class="row">
+						  
+					<div id='map' style='width: 90%; height: 400px'></div>
+					<script>
+					mapboxgl.accessToken = 'pk.eyJ1IjoibmF5dWtpNjkxOCIsImEiOiJjamxqZnh0YzIwYmt0M2tteGlpdmdsajc4In0.Q8FQ1pA57KWY-AGE0eYYwg';
+					var map = new mapboxgl.Map({
+						container: 'map', // container id
+						style: 'mapbox://styles/mapbox/light-v9', // stylesheet location
+						center: [151.004105, -33.813002], // starting position [lng, lat]
+						pitch: 45,
+						bearing: -17.6,
+						zoom: 9 // starting zoom
+					});
+					map.on('load',function(){
+						
+						map.addLayer({
+							"id":"data",
+							"type": "fill-extrusion",
+							"source":{
+								'type':'geojson',
+								'data':data
+							},
+							   'paint':{
+								   'fill-extrusion-color':{
+									   'property':'2016',
+									   "stops":[
+										   [0,'darkgray'],
+										   [50,'lightcoral'],
+										   [100,'crimson'],
+										   [200,'firebrick'],
+										   [500,'darkred'],
+										   ]
+								   },
+								   'fill-extrusion-height':{
+									   'property':'different',
+									   "stops":[
+										   [0.2,0],
+										   [1,50000]
+										]
+								   },
+								   'fill-extrusion-opacity': 0.9
+							   }
+						});
+					});
+					</script>
+					<div class="col-md-15 phone-text">
+						<h3>Vivamus com<span>modo tellus</span></h3>
+						<p>Fusce eget sapien cursus, elementum nunc vitae, euismod est. Donec vehicula purus enim, id placerat arcu volutpat quis. Aliquam non elementum purus, vitae tristique est. Ut vitae auctor velit. Proin ut malesuada nibh. Suspendisse laoreet elit id aliquam pulvinar. In et lacus nec arcu sodales euismod. Aenean quam turpis, pulvinar eu nibh id.</p>
+				
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+			</div>
+		</div>
+		<!--references-->
+		<div class="references" id="references"></div>
+		<div class="col-md-15 phone-text">
+				<h3>References</h3>
+				<p>Fusce eget sapien cursus, elementum nunc vitae, euismod est. Donec vehicula purus enim, id placerat arcu volutpat quis. Aliquam non elementum purus, vitae tristique est. Ut vitae auctor velit. Proin ut malesuada nibh. Suspendisse laoreet elit id aliquam pulvinar. In et lacus nec arcu sodales euismod. Aenean quam turpis, pulvinar eu nibh id.</p>
+				
+			</div>
+			<div class="clearfix"> </div>
+	
+</body>
+</html>
