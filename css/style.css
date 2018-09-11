@@ -202,7 +202,8 @@ nav a#pull {
 	margin: 1em 0 0 0;
 }
 img.scroll1 {
-	margin-left: 14px;
+	margin-bottom: 14px;
+	margin-top: 40px;
 }
 /*----*/
 #feature {
@@ -210,8 +211,9 @@ img.scroll1 {
 	background: #fff;
 }
 .phone-text {
-	margin-top: 6%;
+	margin-top: 2%;
 }
+
 .phone-text  h3{
 	font-size:2em;
 	margin:1% auto 0;
