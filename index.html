@@ -47,6 +47,7 @@
 								<li class="active"><a href="#home" class="scroll">Home </a></li>
 								<li><a href="#Main" class="scroll">Main</a></li>
 								<li><a href="#Comparison" class="scroll">Comparison</a></li>
+								<li><a href="#Conclusion" class="scroll">Conclusion</a></li>
 								<li><a href="#References" class="scroll">References</a></li>
 				
 							</ul>
@@ -96,7 +97,7 @@
 
 
     
-<div id='map' style='width: 90%; height: 400px'></div>
+<div id='map' style='width: 100%; height: 400px'></div>
 <script>
 mapboxgl.accessToken = 'pk.eyJ1IjoibmF5dWtpNjkxOCIsImEiOiJjamxqZnh0YzIwYmt0M2tteGlpdmdsajc4In0.Q8FQ1pA57KWY-AGE0eYYwg';
 var map = new mapboxgl.Map({
@@ -121,10 +122,11 @@ map.on('load',function(){
                    'property':'2016',
                    "stops":[
                        [0,'darkgray'],
-                       [50,'lightcoral'],
+                       [10,'lightpink'],
                        [100,'crimson'],
-                       [200,'firebrick'],
+                       [300,'firebrick'],
                        [500,'darkred'],
+					   [1000,'Brown']
                        ]
                },
                'fill-extrusion-height':{
@@ -140,17 +142,16 @@ map.on('load',function(){
 });
 </script>
 
-					</div>
+			</div>
 					
-					  <img src="./images/red.jpg" width="70%" >
+			<img src="./images/red.jpg" width="80%" >
 						
-					<div class="col-md-20 phone-text">
-						<h3>From 2011 to 2016<span> increasing of educatees</span></h3>
-						<p>Fusce eget sapien cursus, elementum nunc vitae, euismod est. Donec vehicula purus enim, id placerat arcu volutpat quis. Aliquam non elementum purus, vitae tristique est. Ut vitae auctor velit. Proin ut malesuada nibh. Suspendisse laoreet elit id aliquam pulvinar. In et lacus nec arcu sodales euismod. Aenean quam turpis, pulvinar eu nibh id.</p>
+			<div class="col-sm-10 col-md-12 phone-text"  div style="left: 50px;">
+			<h3>From 2011 to 2016<span> increasing of educatees</span></h3>
+			<p>According to NSW Education Centre, Since 2011, the NSW Government has embarked on a series of ambitious reforms aimed to improve education outcomes in NSW. The reforms focus on improving learning level for rural and remote students, taking new approaches to improve the education and social aspirations of Aboriginal children and teenagers(NSW Education Centre.2016). From the map of the differences of educatees, it can represent the result and improvement of these policies. In the west and northwest area, the increasing data is less than other sites, it may because of the low population density in these cities. In the east coast, the increasing of educatees was above than average, especially in Newcastle, Sydney and Wololonong.</p>
+			</div>
+			
 				
-					</div>
-					<div class="clearfix"> </div>
-				</div></div>
 				
 						
 		
@@ -158,7 +159,7 @@ map.on('load',function(){
 		<div class="Features" id="feature">
 				<div class="Comparison" id="Comparison">
 				<div class="container">
-						<div id='map2'  style='width: 50%; height: 400px; margin-right: 50%;'></div>
+						<div id='map2'  style='width: 50%; height: 400px; float:left'></div>
 						<script>
 						mapboxgl.accessToken = 'pk.eyJ1IjoibmF5dWtpNjkxOCIsImEiOiJjamxqZnh0YzIwYmt0M2tteGlpdmdsajc4In0.Q8FQ1pA57KWY-AGE0eYYwg';
 						var map2 = new mapboxgl.Map({
@@ -200,6 +201,10 @@ map.on('load',function(){
 							});
 						});
 						</script>
+						<div style="min-width:1000px">
+						<div style="float:left;width:500px;"></div>
+						<div style="float:right;width:500px;"></div>
+						</div>
 						<div id='map3'  style='width: 50%; height: 400px; float: right'></div>
 						<script>
 						mapboxgl.accessToken = 'pk.eyJ1IjoibmF5dWtpNjkxOCIsImEiOiJjamxqZnh0YzIwYmt0M2tteGlpdmdsajc4In0.Q8FQ1pA57KWY-AGE0eYYwg';
@@ -245,26 +250,39 @@ map.on('load',function(){
 						</script>
 						</div>
 						</div>
-						<img src="./images/co.jpg" width="70%" >
-						<div class="col-md-15 phone-text">
-								<h3>2016<span> Educational Qualifications in different sex</span></h3>
-								<p>Fusce eget sapien cursus, elementum nunc vitae, euismod est. Donec vehicula purus enim, id placerat arcu volutpat quis. Aliquam non elementum purus, vitae tristique est. Ut vitae auctor velit. Proin ut malesuada nibh. Suspendisse laoreet elit id aliquam pulvinar. In et lacus nec arcu sodales euismod. Aenean quam turpis, pulvinar eu nibh id.</p>
-						
+						<img src="./images/co.jpg" width="80%" >
+						<div class="col-sm-10 col-md-12 phone-text" div style="left: 50px;">
+								<h3>2016<span> Educational Qualifications in different sex</span></h3></div>
+								<div class="col-sm-10 col-md-8 phone-text" div style="left: 50px;">
+								<p>These two maps represent that the differences in a number of educatees in Male and Female. The left blue one is Male and the right is Female. From this two map, the different sex is a similar data.  It can be analysed the number of female educatees less than male in remote area, such as bondo state forest, tarawi Nature Reseve and ballengarra state forest, it may because female move to other areas to study.
+									In 2015, the NSW government have conducted research for the reasons for leaving school early. With 16.1 per cent of females expressed external pressure as the main reason, compared to 7.2 per cent of males(NSW Education Centre.2016). In addition, women in major cities are more likely to hold qualifications of college degrees (60.9%) than women in regional or remote locations (53.8%) (Dharmica Mistry.2016).</p>
 							</div>
-						</div>
-						</div>
+					
+						
 					</div>
+					<div><br /><br /><br /><br /><img src="./images/ddd.png" style="max-width:350px;" style="float:right">
+					<br /><img src="./images/vvv.png" style="max-width:450px;" align="right"></div>	
 	
 					
-								
-		<!--references-->
-		<div class="References" id="References"></div>
-		<div class="col-md-15 phone-text">
-				<h3>References</h3>
-				<p>Fusce eget sapien cursus, elementum nunc vitae, euismod est. Donec vehicula purus enim, id placerat arcu volutpat quis. Aliquam non elementum purus, vitae tristique est. Ut vitae auctor velit. Proin ut malesuada nibh. Suspendisse laoreet elit id aliquam pulvinar. In et lacus nec arcu sodales euismod. Aenean quam turpis, pulvinar eu nibh id.</p>
+		<!--Conclusion-->
+		<div class="Conclusion" id="Conclusion"></div>
+		<div class="col-sm-10 col-md-12 phone-text" div style="left: 50px;">
+				<h3>Conclusion</h3>
+				<p>In conclusion，this website represent the improving of the level of education in NSW and the differences in the west area. And described the different major cities will affect the sex ratio for the education industry.</p>
 				
 			</div>
-			<div class="clearfix"> </div>
+			
+
+		<!--references-->
+		<div class="References" id="References"></div>
+		<div class="col-sm-10 col-md-12 phone-text" div style="left: 50px;">
+				<h3>References</h3>
+				<p>NSW Education Centre.(2016) State of Education in NSW - 2016: Centre for Education Statistics and Evaluation Centre for Education Statistics and Evaluation.
+					NSW Education Centre.(2016) ANNUAL REPORT 2016 NSW DEPARTMENT OF EDUCATION
+					Dharmica Mistry.(2016) EDUCATION AND LEARNING Women in NSW Report Series 2016</p>
+				
+			</div>
+		
 	
 </body>
 </html>
